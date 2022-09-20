@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@800&display=swap');
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* colors */
+  --primary-color: #72B01D;
+  --secondary-color: #454955;
+  --background-color: #F3EFF5;
+
+  /* fonts */
+  --heading-font: 'Montserrat', Verdana, Tahoma, sans-serif;
+  --paragraph-font: 'Hind Madurai', Courier, monospace;
+}
+
+/* body styles here */
+body {
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: var(--secondary-color);
+}
+
+/* header styles here */
+header {
+  background-color: var(--primary-color);
+  color: black;
+  margin: 0;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: var(--heading-font);
+}
+
+header h2 {
+  font-family: var(--paragraph-font);
+  margin-bottom: 0;
+}
+
+/* main styles here */
+main {
+  background-color: var(--secondary-coloror);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+/* section styles here */
+section {
+  background-color: var(--background-color);
+  border-radius: 15px;
+  padding: .8rem;
+  margin: 1rem 1%;
+}
+
+section h3 {
+  background-color: var(--primary-color);
+  margin: 0;
+  border-radius: 10px;
+  padding: 1rem 0;
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+section img {
+  width: 100%;
+}
+
+section p {
+  font-family: var(--paragraph-font);
+}
+
+/* footer styles here */
+footer {
+  background-color: var(--primary-color);
+  border-radius: 10px 10px 0 0;
+  position: sticky;
+  bottom: 0;
+}
+
+footer h2 {
+  margin: 0;
+  padding: 1rem 2%;
+  text-align: center;
+  font-family: var(--paragraph-font);
+}
