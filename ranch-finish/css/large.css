@@ -1,0 +1,25 @@
+@media only screen and (min-width: 1028px) {
+  main {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    padding-left: 2%;
+  }
+
+  nav ul li {
+    flex-basis: auto;
+  }
+
+  nav a {
+    padding: .5rem 1rem;
+  }
+
+  div.news {
+    clear: both;
+    column-count: 3;
+  }
+}
+
+/* End of media query */

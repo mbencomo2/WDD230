@@ -1,0 +1,90 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Body rules here */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+/* header rules here */
+
+header {
+  background-color: #17a8e1;
+  padding: 1rem 2%;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: 200;
+}
+
+/* nav rules here */
+
+nav {
+  background-color: #111;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  padding: .8rem 0;
+  /* 44px min height */
+  color: #eee;
+  /* off white */
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+/* main rules here */
+
+main {
+  padding: 1rem 2%;
+  display: block;
+}
+
+main h1 {
+  color: #17a8e1;
+}
+
+main figure {
+  width: 100%;
+  margin: 0;
+}
+
+main figure img {
+  width: 100%;
+}
+
+main figcaption {
+  text-align: center;
+  font-size: .8rem;
+}
+
+/* footer rules here */
+
+footer {
+  text-align: center;
+  padding: 1rem 2%;
+  background-color: #17a8e1;
+}
