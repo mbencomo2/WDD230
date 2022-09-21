@@ -1,5 +1,11 @@
 @media only screen and (min-width: 920px) {
+  body {
+    max-width: 80%;
+  }
   main {
     flex-wrap: nowrap;
+  }
+  section {
+    flex-basis: 30%;
   }
 }
