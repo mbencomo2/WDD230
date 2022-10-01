@@ -1,0 +1,165 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+*/ html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  --color-1: #1E3888;
+  --color-2: #285bb9;
+  --color-3: #006d5e;
+  --color-4: #FBFBFF;
+}
+
+/* body styles */
+body {
+  font-size: 16pt;
+  font-family: 'Merriweather', Verdana, Tahoma, sans-serif;
+  background-color: var(--color-4);
+  overflow: scroll;
+}
+
+h1 {
+  font-family: 'Lora', Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+}
+
+h2,
+h3,
+h4,
+h4,
+h6 {
+  font-family: 'Lora', Verdana, Tahoma, sans-serif;
+}
+
+/* header styles */
+
+header {
+  background-color: var(--color-1);
+  color: white;
+  display: grid;
+  grid-template-columns: 8rem auto;
+  align-items: center;
+}
+
+header img {
+  max-width: 8rem;
+}
+
+header div {
+  margin-left: 5px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h2 {
+  margin: 0;
+}
+
+/* navigation styles */
+nav {
+  background-color: var(--color-3);
+  margin: 0 auto;
+  border-top: 5px solid var(--color-4);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: var(--color-4);
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul li a:hover {
+  background-color: var(--color-2);
+}
+
+nav ul li.active a {
+  background-color: var(--color-1);
+}
+
+/* main styles */
+main {
+  color: rgb(51, 51, 51);
+  padding: .8rem;
+  margin: 0 auto;
+}
+
+main img {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+main section div {
+  text-align: center;
+  border-radius: 25px;
+  margin-top: .5rem;
+  padding: 2%;
+  height: fit-content;
+}
+
+main section.colors {
+  color: var(--color-4);
+}
+
+#color1 {
+  background-color: var(--color-1);
+}
+
+#color2 {
+  background-color: var(--color-2);
+}
+
+#color3 {
+  background-color: var(--color-3);
+}
+
+main section.persona table {
+  max-height: min-content;
+  border: 2px solid var(--color-4);
+  border-collapse: collapse;
+  vertical-align: center;
+  text-align: left;
+  margin-top: 15px;
+}
+
+table th, td {
+  border: 2px solid var(--color-3);
+  padding: 2%;
+  font-size: .9rem;
+}
+
+table th {
+  background-color: var(--color-3);
+  color: var(--color-4);
+}
+
+/* footer styles */
+footer {
+  background-color: var(--color-1);
+  color: var(--color-4);
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--color-4);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

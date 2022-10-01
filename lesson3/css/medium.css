@@ -1,0 +1,40 @@
+@media only screen and (min-width: 780px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    padding-left: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    justify-content: left;
+    width: 100%;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  main section.colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  main section div {
+    width: 33%;
+  }
+
+  main section.persona {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
