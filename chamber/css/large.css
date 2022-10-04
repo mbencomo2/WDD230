@@ -1,0 +1,55 @@
+@media only screen and (min-width: 64rem) {
+
+  header,
+  main,
+  footer {
+    padding: 10px 10%;
+  }
+
+  header #date {
+    background-color: rgba(0, 0, 0, .3);
+  }
+
+  nav {
+    padding: 0 10%
+  }
+
+  nav ul li a {
+    margin-left: 0;
+  }
+
+  main section {
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  }
+
+  #hero {
+    grid-area: 1/2/3/4;
+    width: 100%;
+    height: 100%;
+  }
+
+  #events {
+    grid-area: 1/1/1/2;
+  }
+
+  #spotlight1 {
+    grid-area: 1/4/1/5;
+  }
+
+  #spotlight2 {
+    grid-area: 2/4/2/5;
+  }
+
+  #join {
+    grid-area: 3/1/3/2;
+  }
+
+  #weather {
+    grid-area: 2/1/2/2;
+  }
+
+  #news {
+    grid-area: 3/2/3/5;
+  }
+
+}
