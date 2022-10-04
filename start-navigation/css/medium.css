@@ -1,0 +1,17 @@
+@media only screen and (min-width: 35rem) {
+  nav button {
+    display: none
+  }
+
+  #primaryNav {
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid rgba(0, 0, 0, .5);
+    margin-left: 2vw;
+  }
+
+  nav ul li a {
+    border-top: none;
+    border-right: 1px solid rgba(0, 0, 0, .5);
+  }
+}

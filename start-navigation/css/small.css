@@ -1,0 +1,74 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  margin: 0 2vw;
+}
+
+nav {
+  background-color: #eee;
+}
+
+nav button {
+  margin: .2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #555;
+}
+
+nav ul {
+  display: none;
+  flex-flow: column nowrap;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.open {
+  display: flex;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: .8rem;
+  color: rgb(32, 32, 32);
+  border-top: 1px solid rgba(0, 0, 0, .5);
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, .5);
+  color: #eee;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, .8);
+}
+
+#burgerBtn span:nth-child(1) {
+  display: none;
+}
+
+#burgerBtn span:nth-child(2) {
+  display: block;
+}
+
+#burgerBtn.open span:nth-child(1) {
+  display: block;
+}
+
+#burgerBtn.open span:nth-child(2) {
+  display: none;
+}
