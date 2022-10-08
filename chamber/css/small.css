@@ -42,17 +42,27 @@ a {
 }
 
 a:hover {
-  color:  orange;
+  color: orange;
 }
 
 /* Header Styles */
 header {
   background-color: var(--color-2);
   color: var(--color-4);
-  padding: 0 .5rem;
+  padding: .5rem;
   display: grid;
   grid-template-columns: 100px 1fr;
   align-items: center;
+  margin: 0;
+}
+
+header h1 {
+  margin: 0 auto;
+}
+
+#subtitle {
+  font-size: 1.2rem;
+  font-family: 'Lora', Verdana, Tahoma, sans-serif;
   margin: 0;
 }
 
@@ -67,16 +77,21 @@ header {
   width: 100%;
   text-align: center;
   padding: .5rem;
-  margin: 0;
+  margin: .2rem;
 }
 
 /* Nav Styles */
 nav {
   background-color: var(--color-1);
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav button {
-  margin: .2rem 2vw;
   background: transparent;
   border: none;
   font-size: 2rem;
@@ -90,6 +105,12 @@ nav ul {
   padding: 0;
   margin: 0;
   text-align: center;
+  width: 100%;
+}
+
+.break-row {
+  width: 100%;
+  height: 0;
 }
 
 .open {
@@ -145,9 +166,15 @@ main h1 {
   margin-bottom: 0;
 }
 
+main ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 main div.content {
   padding: .5rem;
   background-color: #006d5e3d;
+  min-height: 8rem;
 }
 
 #hero {
@@ -157,6 +184,7 @@ main div.content {
   display: grid;
   justify-content: center;
   align-items: center;
+  padding: 10%;
 }
 
 #hero div {

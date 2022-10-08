@@ -1,4 +1,8 @@
 @media only screen and (min-width: 35rem) {
+  nav {
+    flex-direction: row-reverse;
+  }
+
   nav button {
     display: none;
   }
@@ -7,9 +11,21 @@
     display: flex;
     flex-direction: row;
   }
+  
+  nav ul {
+    width: 50%;
+  }
 
   nav ul li a {
     border-top: none;
+  }
+  
+  #burgerBtn {
+    display: none;
+  }
+
+  .break-row {
+    display: none;
   }
 
   /* Main Styles */
