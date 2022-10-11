@@ -6,6 +6,15 @@
     padding: 10px 10%;
   }
 
+  header h1, h3 {
+    font-size: 2rem;
+  }
+
+  #subtitle {
+    font-size: 2rem;
+  }
+
+
   nav {
     padding: 0 10%
   }
@@ -15,37 +24,38 @@
   }
 
   main section {
-    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    grid-template-areas: 
+    'events hero hero spotlight1'
+    'weather hero hero spotlight2'
+    'join news news news';
   }
 
   #hero {
-    grid-area: 1/2/3/4;
-    width: 100%;
-    height: 100%;
+    grid-area: hero;
   }
 
   #events {
-    grid-area: 1/1/1/2;
+    grid-area: events;
   }
 
   #spotlight1 {
-    grid-area: 1/4/1/5;
+    grid-area: spotlight1;
   }
 
   #spotlight2 {
-    grid-area: 2/4/2/5;
+    grid-area: spotlight2;
   }
 
   #join {
-    grid-area: 3/1/3/2;
+    grid-area: join;
   }
 
   #weather {
-    grid-area: 2/1/2/2;
+    grid-area: weather;
   }
 
   #news {
-    grid-area: 3/2/3/5;
+    grid-area: news;
   }
 
 }

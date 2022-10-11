@@ -54,9 +54,10 @@ header {
   display: grid;
   grid-template-columns: 100px 1fr;
   grid-template-areas: 
+  'banner banner'
   'logo title'
-  'date date'
-  'banner banner';
+  'motto motto'
+  'date date';
   align-items: center;
   margin: 0;
 }
@@ -66,8 +67,19 @@ header {
   background-color: rgba(0, 0, 0, .3);
 }
 
-header h1 {
+header h1, h3 {
   margin: 0 auto;
+}
+
+#motto {
+  grid-area: motto;
+  text-align: center;
+  margin: 0;
+}
+
+#title {
+  grid-area: title;
+  margin-left: 2vw;
 }
 
 #subtitle {
@@ -76,25 +88,20 @@ header h1 {
   margin: 0;
 }
 
-#title {
-  grid-area: title;
-  margin-left: 2vw;
-  font-size: 1rem;
-}
+#date, #banner {
 
-#date {
-  grid-area: date;
   width: 100%;
   text-align: center;
   padding: .5rem;
   margin: .2rem;
 }
 
+#date {
+  grid-area: date;
+}
+
 #banner {
-  width: 100%;
-  text-align: center;
   grid-area: banner;
-  padding: .5rem;
 }
 
 /* Nav Styles */
@@ -147,7 +154,7 @@ nav ul li.active a {
   color: #eee;
 }
 
-nav a:hover {
+nav ul li a:hover {
   background-color: var(--color-3);
   color: var(--color-4);
 }
@@ -198,9 +205,6 @@ main div.content {
   background-image: url('../images/downtown-anchorage.jpeg');
   background-size: cover;
   background-position: bottom;
-  display: grid;
-  justify-content: center;
-  align-items: center;
   padding: 10%;
 }
 
@@ -218,16 +222,18 @@ main div.content {
   margin: 0 auto;
 }
 
-.button {
+button {
   padding: 1rem;
   border-radius: 15px;
   background-color: var(--color-2);
   color: var(--color-4);
   text-decoration: none;
+  border: none;
 }
 
-.button:hover {
+button:hover {
   background-color: var(--color-1);
+  color: orange;
 }
 
 .rounded-corners {
