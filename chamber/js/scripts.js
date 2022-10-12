@@ -15,7 +15,7 @@ datefield.innerHTML = `${fulldate}`;
 document.querySelector('#year').textContent = now.getFullYear()
 
 //Display Banner when date is Monday or Tuesday
-if (now.getDay() == 2 || now.getDay() == 3) {
+if (now.getDay() == 1 || now.getDay() == 2) {
   const banner = document.createElement('p');
   banner.id = 'banner'
   banner.classList = 'rounded-corners'

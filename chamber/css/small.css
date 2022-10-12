@@ -77,6 +77,10 @@ header h1, h3 {
   margin: 0;
 }
 
+#logo {
+  grid-area: logo;
+}
+
 #title {
   grid-area: title;
   margin-left: 2vw;
