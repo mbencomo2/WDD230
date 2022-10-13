@@ -19,7 +19,7 @@ button.addEventListener('click', () => {
   listText.textContent = myChapter;
   listItem.appendChild(listButton);
   listButton.textContent = '❌';
-  listButton.setAttribute('aria-label', 'Delete');
+  listButton.setAttribute('aria-label', `Remove ${myChapter}`);
   list.appendChild(listItem);
 
   //create an event listener to handle clicking the delete button
