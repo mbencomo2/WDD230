@@ -3,6 +3,10 @@
     font-size: 1.5rem;
   }
   
+  #lineBreak {
+    display: none;
+  }
+
   nav {
     flex-direction: row-reverse;
   }
@@ -28,14 +32,15 @@
     display: none;
   }
 
-  .break-row {
+  .break-row-nav {
     display: none;
   }
 
   /* Main Styles */
   
-  main section {
+  .container-flex {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     'hero hero'
     'news news'
@@ -75,7 +80,7 @@
   /* Footer Styles */
   footer {
     display: grid;
-    grid-template-columns: 100px 3fr 1fr;
+    grid-template-columns: 100px 1fr 1fr;
   }
 
   #address {

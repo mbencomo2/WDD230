@@ -23,7 +23,8 @@
     margin-left: 0;
   }
 
-  main section {
+  .container-flex {
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
     'events hero hero spotlight1'
     'weather hero hero spotlight2'
