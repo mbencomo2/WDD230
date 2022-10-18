@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Serving the town of Anchorship since 2020">
   <title>Anchorship Chamber of Commerce</title>
-  
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -23,7 +23,7 @@
 
 <body>
   <header>
-    <img src="images/logo.png" alt="Chamber Logo" id="logo" height="100" width="100">
+    <img src="images/logo.webp" alt="Chamber Logo" id="logo" height="100" width="100">
     <div id="title">
       <h1>Anchorship <span id="lineBreak"><br></span><span id="subtitle">Chamber of Commerce</span></h1>
     </div>
@@ -88,8 +88,13 @@
     </ul>
   </nav>
   <main>
+    <picture id="hero-img">
+      <source media="(max-width: 400px)" srcset="images/heroSrc-small.jpg">
+      <source media="(max-width: 650px)" srcset="images/heroSrc-medium.jpg">
+      <source media="(max-width: 900px)" srcset="images/heroSrc-large.jpg">
+      <img src="images/heroSrc.jpg " alt="Hero Image">
+    </picture>
     <h1>Discover</h1>
-
     <section class="container-flex">
       <div class="content rounded-corners" id="hero">
         <div class="rounded-corners">
@@ -101,20 +106,21 @@
       <div class="content rounded-corners" id="events">
         <h2>Fish for a Better Future</h2>
         <img class="spotlightImg" src="images/fishing.png" alt="Fishing Rod" width="150" height="150">
-        <p>Join us to help save our oceans from over fishing and receive fishing tips Saturday [1:00PM]... <a href="#">Learn more</a></p>
+        <p>Join us to help save our oceans from over fishing and receive fishing tips Saturday [1:00PM]... <button
+            type="button" onclick="window.location.href='#';">Learn more</button></p>
       </div>
 
       <div class="content rounded-corners" id="weather">
         <h2>Weather</h2>
         <div class="break-row"></div>
         <div class="weatherSprite"></div>
-        <p id="temp">3&deg;C</p>
+        <p id="temp"><span id="temperature">8</span>&deg; C</p>
         <div id="weatherDsc">
           <h3>Partly Cloudy</h3>
           <hr>
           <ul id="windStats">
-            <li>Wind Speed: 13 KPH</li>
-            <li>Wind Chill: -0.3&deg;C</li>
+            <li>Wind Speed: <span id="windSpeed">5</span> KPH</li>
+            <li>Wind Chill: <span id="windChill"></span></li>
           </ul>
         </div>
       </div>
@@ -156,7 +162,7 @@
     </section>
   </main>
   <footer>
-    <img src="images/logo.png" alt="Chamber Logo">
+    <img src="images/logo.webp" alt="Chamber Logo">
     <ul id="address">
       <li>Anchorship Chamber of Commerce</li>
       <li>1016 W 6th Ave suite 303</li>
@@ -177,6 +183,7 @@
         id="lastModified"></span></p>
   </footer>
   <script src="js/scripts.js"></script>
+  <script src="js/windchill.js"></script>
 </body>
 
 </html>

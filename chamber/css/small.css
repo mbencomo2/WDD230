@@ -190,6 +190,10 @@ main {
   padding: 2vw;
 }
 
+#hero-img img {
+  width: 100%;
+}
+
 .container-flex {
   display: flex;
   flex-flow: column nowrap;
@@ -247,6 +251,7 @@ button {
   color: var(--color-4);
   text-decoration: none;
   border: none;
+  margin-top: .5rem;
 }
 
 button:hover {
@@ -274,10 +279,11 @@ button:hover {
 #temp {
   font-size: 4rem;
   font-weight: bolder;
+  margin: 0;
 }
 
 #weatherDsc {
-  text-align: right;
+  text-align: center;
   width: 100%;
 }
 
