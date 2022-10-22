@@ -270,7 +270,7 @@ button:hover {
 }
 
 .weatherSprite {
-	background: url('../images/weather.png') no-repeat 12.81% 49.516%;
+	background: url('../images/weather.webp') no-repeat 12.81% 49.516%;
 	background-size: 625px 625px;
 	width: 122px;
 	height: 108px;
