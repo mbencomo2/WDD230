@@ -37,10 +37,14 @@
   }
 
   /* Main Styles */
-  
-  .container-flex {
+  #discover .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-areas: 
     'hero hero'
     'news news'
@@ -81,15 +85,16 @@
   footer {
     display: grid;
     grid-template-columns: 100px 1fr 1fr;
+    grid-template-areas: 
+    'logo address contact';
   }
-
   #address {
-    grid-area: 1/2/1/3;
+    grid-area: address;
     text-align: left;
   }
 
   #contact {
-    grid-area: 1/3/1/4;
+    grid-area: contact;
     text-align: right;
   }
 

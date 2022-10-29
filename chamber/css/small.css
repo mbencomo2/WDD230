@@ -12,19 +12,21 @@ html {
   --color-1: #1E3888;
   --color-2: #285bb9;
   --color-3: #006d5e;
-  --color-4: #FBFBFF;
+  --color-4: #e0e0e0;
+  --color-text: #e0e0e0;
 }
 
 
 body {
   font-size: 12pt;
   font-family: 'Merriweather', Verdana, Tahoma, sans-serif;
+  color: var(--color-text);
   background-color: var(--color-4);
   overflow: scroll;
 }
 
 h1 {
-  font-family: 'Lora', Verdana, Tahoma, sans-serif;
+  font-family: 'Unlock', Verdana, Tahoma, sans-serif;
   font-weight: 500;
 }
 
@@ -38,36 +40,38 @@ h6 {
 
 a {
   padding: .2rem;
-  color: rgb(0, 56, 63);
+  color: rgb(0, 174, 197);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-4);
+  color: orange;
 }
 
 /* Header Styles */
 header {
   background-color: var(--color-2);
-  color: var(--color-4);
+  color: var(--color-text);
   padding: .5rem;
   display: grid;
   grid-template-columns: 100px 1fr;
-  grid-template-areas: 
-  'banner banner'
-  'logo title'
-  'motto motto'
-  'date date';
+  grid-template-areas:
+    'banner banner'
+    'logo title'
+    'motto motto'
+    'date date';
   align-items: center;
   margin: 0;
 }
 
 
-#date, #banner {
+#date,
+#banner {
   background-color: rgba(0, 0, 0, .3);
 }
 
-header h1, h3 {
+header h1,
+h3 {
   margin: 0 auto;
 }
 
@@ -77,8 +81,9 @@ header h1, h3 {
   margin: 0;
 }
 
-#logo {
+.logo {
   grid-area: logo;
+  max-width: 100px;
 }
 
 #title {
@@ -88,11 +93,12 @@ header h1, h3 {
 
 #subtitle {
   font-size: 1.2rem;
-  font-family: 'Lora', Verdana, Tahoma, sans-serif;
+  font-family: 'Unlock', Verdana, Tahoma, sans-serif;
   margin: 0;
 }
 
-#date, #banner {
+#date,
+#banner {
 
   width: 100%;
   text-align: center;
@@ -113,11 +119,11 @@ nav {
   background-color: var(--color-1);
   position: sticky;
   top: 0;
+  z-index: 1;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding-right: 2%;
 }
 
 nav button {
@@ -190,19 +196,49 @@ main {
   padding: 2vw;
 }
 
+#last-visit {
+  width: fit-content;
+  text-align: center;
+  padding: .2rem .5rem;
+  margin: .2rem auto
+}
+
+#discover .container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  
+}
+
+#discover .content {
+  margin-top: .5rem;
+}
+
+main h1 {
+  color: orange;
+  margin: 0 0;
+}
+
+img[data-src] {
+  filter: blur(0.2rem);
+}
+
+img {
+  filter: blur(0rem);
+  transition: filter 1s;
+  max-width: 80%;
+}
+
 #hero-img img {
   width: 100%;
 }
 
-.container-flex {
+.container {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-around;
   gap: .5rem 1rem;
   text-align: center;
-}
-
-main h1 {
-  margin-bottom: 0;
 }
 
 main ul {
@@ -210,10 +246,9 @@ main ul {
   padding-left: 0;
 }
 
-main div.content {
+.content {
   padding: .5rem;
-  background-color: #006d5e3d;
-  min-height: 8rem;
+  background-color: var(--color-3);
 }
 
 #hero {
@@ -246,7 +281,7 @@ main div.content {
 
 button {
   padding: 1rem;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: var(--color-2);
   color: var(--color-4);
   text-decoration: none;
@@ -260,7 +295,15 @@ button:hover {
 }
 
 .rounded-corners {
-  border-radius: 15px;
+  border-radius: 5px;
+}
+
+.drop-shadow {
+  box-shadow: 5px 5px #292929;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px #292929;
 }
 
 .clearfix::after {
@@ -270,10 +313,10 @@ button:hover {
 }
 
 .weatherSprite {
-	background: url('../images/weather.webp') no-repeat 12.81% 49.516%;
-	background-size: 625px 625px;
-	width: 122px;
-	height: 108px;
+  background: url('../images/weather.webp') no-repeat 12.81% 49.516%;
+  background-size: 625px 625px;
+  width: 122px;
+  height: 108px;
 }
 
 #temp {
@@ -298,13 +341,13 @@ footer {
   flex-flow: column nowrap;
   align-items: center;
   background-color: var(--color-2);
-  color: var(--color-4);
+  color: var(--color-text);
   padding: .5rem;
   text-align: center;
 }
 
 footer a {
-  color: var(--color-4);
+  color: var(--color-text);
 }
 
 footer a:hover {
