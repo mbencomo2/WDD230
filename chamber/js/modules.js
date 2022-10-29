@@ -59,9 +59,7 @@ const pageFunctions = {
       const lastVisit = localStorage.getItem('lastVisit');
       const currVisit = getDate();
       const days = calcDays(calcSeconds(currVisit)) - calcDays(lastVisit);
-      if (days > 0) {
-        document.getElementById('lastVisit').textContent = `Last Visit: ${days} days ago`;
-      }
+      document.getElementById('lastVisit').textContent = `Last Visit: ${days} days ago`;
       storeVisit();
     }
     else {
