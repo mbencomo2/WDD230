@@ -117,7 +117,7 @@ function calcMonthSeconds(month) {
       seconds = 259200;
       break
   }
-  return month * seconds
+  return seconds
 }
 
 function calcDays(seconds) {
