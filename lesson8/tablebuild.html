@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Practice</title>
+
+  <link rel="stylesheet" href="css/tablecss.css" type="text/css">
+
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body class="lightmode">
+  <div class="content">
+    <header>
+      <h1>Table Styling and Scope</h1>
+      <button id="themeselector" class="btntheme"></button>
+    </header>
+    <main>
+      <table>
+        <caption>
+          Figure 1: Wasatch Sales
+        </caption>
+        <tr>
+          <th scope="colgroup" colspan="2" class="ttitle">Sales</th>
+        </tr>
+        <tr>
+          <th scope="col" class="thead">Month</th>
+          <th scope="col" class="thead">Amount</th>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>3,000</td>
+        </tr>
+        <tr>
+          <td>August</td>
+          <td class="largest">8,000</td>
+        </tr>
+        <tr>
+          <td>September</td>
+          <td>4,000</td>
+        </tr>
+        <tr>
+          <td>October</td>
+          <td>3,000</td>
+        </tr>
+        <tr>
+          <td>November</td>
+          <td>2,000</td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <h3>&copy;2022 | Matthew Bencomo | Table Practice</h3>
+    </footer>
+  </div>
+</body>
+
+</html>
