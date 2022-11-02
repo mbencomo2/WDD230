@@ -24,3 +24,8 @@ pageFunctions.deferImages();
 if (document.title == 'Anchorage: Discover') {
   pageFunctions.lastVisited();
 }
+
+//autofill Date and Time in Join form
+if (document.title == 'Anchorage: Join') {
+  pageFunctions.autoFillDateTime();
+}

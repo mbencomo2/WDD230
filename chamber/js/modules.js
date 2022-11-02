@@ -65,6 +65,9 @@ const pageFunctions = {
     else {
       storeVisit();
     }
+  },
+  autoFillDateTime() {
+    document.getElementById('dateField').valueAsDate = new Date();
   }
 };
 
@@ -97,7 +100,7 @@ function calcSeconds(date) {
 }
 
 function calcMonthSeconds(month) {
-  let seconds = 0;
+  let seconds = null;
   switch (month) {
     case 1:
     case 3:
