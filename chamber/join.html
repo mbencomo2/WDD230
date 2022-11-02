@@ -96,41 +96,45 @@
     <form action="submit.html" method="get" class="rounded-corners">
       <fieldset>
         <legend>Contact Info</legend>
-        <label class="top">First Name <input type="text" name="fname" required title="This is a required field." autofocus></label>
+        <label class="top">First Name <input type="text" name="fname" required title="This is a required field."
+            autofocus></label>
         <label class="top">Last Name <input type="text" name="lname" required title="This is a required field."></label>
-        <label class="top">Position/Title <input type="text" name="position" pattern="[A-Za-z0-9-]{7,}$" title="Cannot contain special characters other than '-'"></label>
-        <label class="top">Email <input type="email" name="email" placeholder="someone@aplace.com" required title="This is a required field."></label>
-        <label class="top">Phone <input type="tel" name="pnone" placeholder="1235551234" required title="This is a required field."></label>
-        <label class="top">Business Name/Title <input type="text" name="business" required title="This is a required field."></label>
+        <label class="top">Position/Title <input type="text" name="position" pattern="[A-Za-z0-9-]{7,}$"
+            title="Cannot contain special characters other than '-'"></label>
+        <label class="top">Email <input type="email" name="email" placeholder="someone@aplace.com" required
+            title="This is a required field."></label>
+        <label class="top">Phone <input type="tel" name="pnone" placeholder="1235551234" required
+            title="This is a required field."></label>
+        <label class="top">Business Name/Title <input type="text" name="business" required
+            title="This is a required field."></label>
         <input type="datetime-local" name="dateTime" id="dateField" hidden>
       </fieldset>
       <fieldset id="membership">
         <legend>Membership</legend>
-        <div>
-          <div>Type</div>
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <label class="sbs"><input type="radio" name="mlvl" id="r1" value="NP"> Non-Profit</label>
-                </td>
-                <td class="minfo">For Non Profit Organizations - No Fee</td>
-              </tr>
-              <tr>
-                <td><label class="sbs"><input type="radio" name="mlvl" id="r2" value="bronze" checked> Bronze</label>
-                </td>
-                <td class="minfo">Basic Membership - $1000</td>
-              </tr>
-              <tr>
-                <td><label class="sbs"><input type="radio" name="mlvl" id="r3" value="silver"> Silver</label></td>
-                <td class="minfo">Bronze Member + Advertising + Event Discounts - $2500</td>
-              </tr>
-              <tr>
-                <td><label class="sbs"><input type="radio" name="mlvl" id="r4" value="gold"> Gold</label></td>
-                <td class="minfo">Silver Member + Trainings + Premium Advertizing Channels - $4000</td>
-              </tr>
-            </tbody>
-          </table>
+        <div>Type</div>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <label class="sbs"><input type="radio" name="mlvl" id="r1" value="NP"> Non-Profit</label>
+              </td>
+              <td class="minfo">For Non Profit Organizations - No Fee</td>
+            </tr>
+            <tr>
+              <td><label class="sbs"><input type="radio" name="mlvl" id="r2" value="bronze" checked> Bronze</label>
+              </td>
+              <td class="minfo">Basic Membership - $1000</td>
+            </tr>
+            <tr>
+              <td><label class="sbs"><input type="radio" name="mlvl" id="r3" value="silver"> Silver</label></td>
+              <td class="minfo">Bronze Member + Advertising + Event Discounts - $2500</td>
+            </tr>
+            <tr>
+              <td><label class="sbs"><input type="radio" name="mlvl" id="r4" value="gold"> Gold</label></td>
+              <td class="minfo">Silver Member + Trainings + Premium Advertizing Channels - $4000</td>
+            </tr>
+          </tbody>
+        </table>
       </fieldset>
       <fieldset id="desc">
         <legend>Business Description</legend>
