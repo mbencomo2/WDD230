@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Anchorage Chamber of Commerce: Serving the town of Anchorage since 2020">
-  <title>Anchorage: Discover</title>
+  <title>Anchorage: Join</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.ico">
@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
+
+  <script src="./js/scripts.js" type="module"></script>
 </head>
 
 <body>
@@ -83,69 +85,59 @@
     <div class="break-row-nav"></div>
     <ul id="primaryNav" class="">
       <li><a href="index.html">Home</a></li>
-      <li class="active"><a href="#">Discover</a></li>
+      <li><a href="discover.html">Discover</a></li>
       <li><a href="#">Directory</a></li>
-      <li><a href="join.html">Join</a></li>
+      <li class="active"><a href="#">Join</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-  <main id="discover">
-    <h1 class="text-shadow">Discover</h1>
-    <div class="container">
-      <div id="last-visit" class="content rounded-corners drop-shadow">
-        <p><span id="lastVisit">Last Visit: First time visiting! Welcome.</span></p>
-      </div>
-      <div class="content rounded-corners drop-shadow">
-        <h2>Anchorage</h2>
-        <p>Standing at 61&deg; North, Anchorage Alaska sits slightly farther north than Oslo, Stockholm, Helsinki, and
-          Saint Petersburg while being as far west as Honolulu, Hawaii.</p>
-        <p>The average temperature varies between 68&deg;F during the 4 summer months and 13&deg;F during the coldest
-          part of the year.</p>
-        <p>Yearly precipitation is around 17.3 inches. </p>
-      </div>
-      <div class="content rounded-corners drop-shadow">
-        <h2>Demographics</h2>
-        <p>Anchorage is one of the largest cities in the US encompassing nearly 1,961 square miles and serving
-          around300000 people.</p>
-        <p>The city serves as a major source of crude oil and a central transportation hub for moving
-          goods across the globe.</p>
-      </div>
-      <section id="activities">
-        <div class="content rounded-corners drop-shadow">
-          <img src="https://via.placeholder.com/400/300" data-src="./images/discover/alaska-moose-medium.jpeg"
-            alt="Picture of Moose" loading="lazy">
-          <h3>Look for Moose!</h3>
-          <p>Moose can be found in the area all year round, and the population can reach as many as 1500 moose!</p>
-        </div>
-        <div class="content rounded-corners drop-shadow">
-          <img src="https://via.placeholder.com/400/300" data-src="./images/discover/alaska-train-medium.jpeg"
-            alt="Picture of Train" loading="lazy">
-          <h3>Take the Train</h3>
-          <p>Trains are used to transport goods and people across the state. They travel through beautiful mountain
-            scenery. Take a ride!</p>
-        </div>
-        <div class="content rounded-corners drop-shadow">
-          <img src="https://via.placeholder.com/400/300" data-src="images/discover/alaska-museum-medium.jpeg"
-            alt="Picture of Museum" loading="lazy">
-          <h3>Visit a Museum</h3>
-          <p>Learn more about the natural history of the area and how the city came to become one of the most important
-            trade routes on the globe.</p>
-        </div>
-        <div class="content rounded-corners drop-shadow">
-          <img src="https://via.placeholder.com/400/300" data-src="images/discover/alaska-tramway-medium.jpeg"
-            alt="Picture of Tramway" loading="lazy">
-          <h3>Ride a Tramway</h3>
-          <p>A tram travels suspended by a cable high throught the mountains. Take in the views high above the trees as
-            you overlook the bay!</p>
-        </div>
-        <div class="content rounded-corners drop-shadow">
-          <img src="https://via.placeholder.com/400/300" data-src="images/discover/alaska-food-medium.jpeg"
-            alt="Picture of Cuisine" loading="lazy">
-          <h3>Taste Alaska</h3>
-          <p>Anchorage is famous for its seafood, especially tasty crustaceans such as lobster and crab.</p>
-        </div>
-      </section>
-    </div>
+  <main id="join">
+    <h1 class="text-shadow">Join</h1>
+    <form action="submit.html" method="get" class="rounded-corners">
+      <fieldset>
+        <legend>Contact Info</legend>
+        <label class="top">First Name <input type="text" name="fname" required title="This is a required field." autofocus></label>
+        <label class="top">Last Name <input type="text" name="lname" required title="This is a required field."></label>
+        <label class="top">Position/Title <input type="text" name="position" pattern="[A-Za-z0-9-]{7,}$" title="Cannot contain special characters other than '-'"></label>
+        <label class="top">Email <input type="email" name="email" placeholder="someone@aplace.com" required title="This is a required field."></label>
+        <label class="top">Phone <input type="tel" name="pnone" placeholder="1235551234" required title="This is a required field."></label>
+        <label class="top">Business Name/Title <input type="text" name="business" required title="This is a required field."></label>
+        <input type="datetime-local" name="dateTime" id="dateField" hidden>
+      </fieldset>
+      <fieldset id="membership">
+        <legend>Membership</legend>
+        <div>
+          <div>Type</div>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="sbs"><input type="radio" name="mlvl" id="r1" value="NP"> Non-Profit</label>
+                </td>
+                <td class="minfo">For Non Profit Organizations - No Fee</td>
+              </tr>
+              <tr>
+                <td><label class="sbs"><input type="radio" name="mlvl" id="r2" value="bronze" checked> Bronze</label>
+                </td>
+                <td class="minfo">Basic Membership - $1000</td>
+              </tr>
+              <tr>
+                <td><label class="sbs"><input type="radio" name="mlvl" id="r3" value="silver"> Silver</label></td>
+                <td class="minfo">Bronze Member + Advertising + Event Discounts - $2500</td>
+              </tr>
+              <tr>
+                <td><label class="sbs"><input type="radio" name="mlvl" id="r4" value="gold"> Gold</label></td>
+                <td class="minfo">Silver Member + Trainings + Premium Advertizing Channels - $4000</td>
+              </tr>
+            </tbody>
+          </table>
+      </fieldset>
+      <fieldset id="desc">
+        <legend>Business Description</legend>
+        <label class="top"><textarea name="businessDesc" id="description" rows="5"></textarea></label>
+      </fieldset>
+      <input type="submit" value="Join the Chamber" class="submitBtn">
+    </form>
   </main>
   <footer>
     <img src="images/logo.webp" alt="Chamber Logo" class="logo">
@@ -168,7 +160,6 @@
     <p>© <span id="year">20xx</span> Anchorage Chamber | <b>Matthew Bencomo</b> | WDD 230 Project | <span
         id="lastModified"></span></p>
   </footer>
-  <script src="./js/scripts.js" type="module"></script>
 </body>
 
 </html>

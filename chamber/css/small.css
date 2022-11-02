@@ -48,7 +48,7 @@ a:hover {
   color: orange;
 }
 
-/* Header Styles */
+/*--------------------- Header Styles ---------------------*/
 header {
   background-color: var(--color-2);
   color: var(--color-text);
@@ -64,26 +64,240 @@ header {
   margin: 0;
 }
 
-
-#date,
-#banner {
-  background-color: rgba(0, 0, 0, .3);
-}
-
 header h1,
 h3 {
   margin: 0 auto;
 }
 
-#motto {
-  grid-area: motto;
-  text-align: center;
-  margin: 0;
+/*--------------------- Nav Styles ---------------------*/
+nav {
+  background-color: var(--color-1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
+nav button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+nav ul {
+  display: none;
+  flex-flow: column nowrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: .8rem;
+  color: rgb(255, 255, 255);
+  border-top: 1px solid rgba(0, 0, 0, .5);
+}
+
+nav ul li a:hover {
+  background-color: var(--color-3);
+  color: orange;
+}
+
+/*--------------------- Main Styles ---------------------*/
+main {
+  padding: 2vw;
+}
+main h1 {
+  color: rgb(214, 139, 0);
+  margin: 0 0;
+}
+
+img[data-src] {
+  filter: blur(0.2rem);
+}
+
+img {
+  filter: blur(0rem);
+  transition: filter 1s;
+  max-width: 80%;
+}
+
+main ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--color-2);
+  color: var(--color-4);
+  text-decoration: none;
+  border: none;
+  margin-top: .5rem;
+}
+
+button:hover {
+  background-color: var(--color-1);
+  color: rgb(172, 112, 0);
+}
+
+td {
+  min-width: 150px;
+}
+
+/*--------------------- footer styles ---------------------*/
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: var(--color-2);
+  color: var(--color-text);
+  padding: .5rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--color-text);
+}
+
+footer a:hover {
+  color: rgb(172, 112, 0);
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: .5rem;
+}
+
+/*--------------------- Class Selectors ---------------------*/
 .logo {
   grid-area: logo;
   max-width: 100px;
+}
+
+.break-row-nav {
+  width: 100%;
+  height: 0;
+}
+
+.break-row {
+  width: 100%;
+  height: 0;
+}
+
+.open {
+  display: flex;
+}
+
+.active a {
+  background-color: rgba(0, 0, 0, .2);
+  color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  gap: .5rem 1rem;
+  text-align: center;
+}
+
+.content {
+  padding: .5rem;
+  background-color: var(--color-3);
+}
+
+.spotlightImg {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.rounded-corners {
+  border-radius: 5px;
+}
+
+.drop-shadow {
+  box-shadow: 5px 5px #292929;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px #292929;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.weatherSprite {
+  background: url('../images/weather.webp') no-repeat 12.81% 49.516%;
+  background-size: 625px 625px;
+  width: 122px;
+  height: 108px;
+}
+
+.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: rgb(172, 112, 0);
+  font-size: 1rem;
+}
+
+.top input, .top select, .top textarea {
+  display: block;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .1);
+}
+.sbs {
+  display: block;
+  padding: .75rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.submitBtn {
+  border: none;
+  background-color: rgb(172, 112, 0);
+  box-shadow: 5px 5px #292929;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 1rem 2rem;
+  width: 15rem;
+}
+
+
+.minfo {
+  display: none;
+}
+
+/*--------------------- ID Selectors --------------------- */
+#motto {
+  grid-area: motto;
+  text-align: center;
+
+  font-size: 1rem;
+  margin: 0;
+}
+
+#date,
+#banner {
+  background-color: rgba(0, 0, 0, .3);
 }
 
 #title {
@@ -114,67 +328,6 @@ h3 {
   grid-area: banner;
 }
 
-/* Nav Styles */
-nav {
-  background-color: var(--color-1);
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav button {
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
-}
-
-nav ul {
-  display: none;
-  flex-flow: column nowrap;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  width: 100%;
-}
-
-.break-row-nav {
-  width: 100%;
-  height: 0;
-}
-
-.break-row {
-  width: 100%;
-  height: 0;
-}
-
-.open {
-  display: flex;
-}
-
-nav ul li a {
-  display: block;
-  text-decoration: none;
-  padding: .8rem;
-  color: rgb(255, 255, 255);
-  border-top: 1px solid rgba(0, 0, 0, .5);
-}
-
-nav ul li.active a {
-  background-color: rgba(0, 0, 0, .2);
-  color: #eee;
-}
-
-nav ul li a:hover {
-  background-color: var(--color-3);
-  color: orange;
-}
-
 #burgerBtn span:nth-child(1) {
   display: block;
 }
@@ -189,11 +342,6 @@ nav ul li a:hover {
 
 #burgerBtn.open span:nth-child(2) {
   display: block;
-}
-
-/* Main Styles */
-main {
-  padding: 2vw;
 }
 
 #last-visit {
@@ -214,43 +362,6 @@ main {
   margin-top: .5rem;
 }
 
-main h1 {
-  color: orange;
-  margin: 0 0;
-}
-
-img[data-src] {
-  filter: blur(0.2rem);
-}
-
-img {
-  filter: blur(0rem);
-  transition: filter 1s;
-  max-width: 80%;
-}
-
-#hero-img img {
-  width: 100%;
-}
-
-.container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  gap: .5rem 1rem;
-  text-align: center;
-}
-
-main ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.content {
-  padding: .5rem;
-  background-color: var(--color-3);
-}
-
 #hero {
   background-image: url('../images/downtown-anchorage.jpeg');
   background-size: cover;
@@ -267,56 +378,15 @@ main ul {
   padding: 1rem;
 }
 
+#hero-img img {
+  width: 100%;
+}
+
 #weather {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-}
-
-.spotlightImg {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-button {
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: var(--color-2);
-  color: var(--color-4);
-  text-decoration: none;
-  border: none;
-  margin-top: .5rem;
-}
-
-button:hover {
-  background-color: var(--color-1);
-  color: orange;
-}
-
-.rounded-corners {
-  border-radius: 5px;
-}
-
-.drop-shadow {
-  box-shadow: 5px 5px #292929;
-}
-
-.text-shadow {
-  text-shadow: 2px 2px #292929;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.weatherSprite {
-  background: url('../images/weather.webp') no-repeat 12.81% 49.516%;
-  background-size: 625px 625px;
-  width: 122px;
-  height: 108px;
 }
 
 #temp {
@@ -335,26 +405,24 @@ button:hover {
   text-align: left;
 }
 
-/* footer styles */
-footer {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  background-color: var(--color-2);
-  color: var(--color-text);
-  padding: .5rem;
-  text-align: center;
+/*--------------------- Form Selectors  ---------------------*/
+form fieldset {
+  margin: 2rem;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: .5rem 2%;
 }
 
-footer a {
-  color: var(--color-text);
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 .5rem;
 }
 
-footer a:hover {
-  color: orange;
+input:required {
+  border-left: 6px solid red;
 }
 
-footer ul {
-  list-style-type: none;
-  padding-left: .5rem;
+input:required:valid {
+  border-left: 6px solid green;
 }

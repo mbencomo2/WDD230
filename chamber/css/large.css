@@ -1,19 +1,14 @@
 @media only screen and (min-width: 64rem) {
-
   header,
   main,
   footer {
     padding: 10px 10%;
   }
 
-  header h1, header h3 {
+  header h1,
+  header h3 {
     font-size: 2.5rem;
   }
-
-  #subtitle {
-    font-size: 2.5rem;
-  }
-
 
   nav {
     padding: 0 10%
@@ -23,12 +18,14 @@
     margin-left: 0;
   }
 
-  .container {
-    grid-template-columns: repeat(4, 25%);
-    grid-template-areas: 
-    'events hero hero spotlight1'
-    'weather hero hero spotlight2'
-    'join news news news';
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*--------------------- ID Selectors ---------------------*/
+  #subtitle {
+    font-size: 2.5rem;
   }
 
   #activities {
@@ -76,4 +73,27 @@
     grid-area: news;
   }
 
+  /*--------------------- Class Selectors ---------------------*/
+
+  .container {
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas:
+      'events hero hero spotlight1'
+      'weather hero hero spotlight2'
+      'join news news news';
+  }
+
+  .top input,
+  .top textarea {
+    width: 50%;
+  }
+
+  .sbs {
+    padding: .4rem;
+  }
+
+  .minfo {
+    display: inline-block;
+    padding-left: .5rem;
+  }
 }
