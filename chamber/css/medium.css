@@ -1,23 +1,10 @@
 @media only screen and (min-width: 35rem) {
-  #motto {
-    font-size: 1.5rem;
-  }
-  
-  #lineBreak {
-    display: none;
-  }
-
   nav {
     flex-direction: row-reverse;
   }
 
   nav button {
     display: none;
-  }
-
-  #primaryNav {
-    display: flex;
-    flex-direction: row;
   }
   
   nav ul {
@@ -27,30 +14,36 @@
   nav ul li a {
     border-top: none;
   }
-  
+
+  footer {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-areas: 
+    'logo address contact';
+  }
+
+  /*--------------------- ID Selectors ---------------------*/
+  #address {
+    grid-area: address;
+    text-align: left;
+  }
+
+  #contact {
+    grid-area: contact;
+    text-align: right;
+  }
+
+  footer p {
+    grid-area: 2/1/2/4;
+  }
+
+  #primaryNav {
+    display: flex;
+    flex-direction: row;
+  }
+
   #burgerBtn {
     display: none;
-  }
-
-  .break-row-nav {
-    display: none;
-  }
-
-  /* Main Styles */
-  #discover .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    'hero hero'
-    'news news'
-    'spotlight1 spotlight2'
-    'join join'
-    'events weather';
   }
 
   #hero {
@@ -81,24 +74,37 @@
     grid-area: news;
   }
 
-  /* Footer Styles */
-  footer {
+  #motto {
+    font-size: 1.5rem;
+  }
+  
+  #lineBreak {
+    display: none;
+  }
+
+  #discover .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*--------------------- Class Selectors ---------------------*/
+  .break-row-nav {
+    display: none;
+  }
+
+  .container {
     display: grid;
-    grid-template-columns: 100px 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-areas: 
-    'logo address contact';
-  }
-  #address {
-    grid-area: address;
-    text-align: left;
-  }
-
-  #contact {
-    grid-area: contact;
-    text-align: right;
+    'hero hero'
+    'news news'
+    'spotlight1 spotlight2'
+    'join join'
+    'events weather';
   }
 
-  footer p {
-    grid-area: 2/1/2/4;
+  .minfo {
+    display: inline-block;
+    padding-left: .5rem;
   }
 }
