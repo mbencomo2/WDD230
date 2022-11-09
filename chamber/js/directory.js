@@ -45,7 +45,7 @@ function displayCompanies(company) {
   details.appendChild(Phone);
   details.appendChild(website);
   card.appendChild(details);
-  card.classList.add('content',"rounded-corners", "drop-shadow")
+  card.classList.add('content',"rounded-corners", "drop-shadow", "text-shadow")
   cards.appendChild(card);
 }
 
@@ -55,6 +55,7 @@ document.getElementById('bentoBtn').addEventListener('click', () => {
     section.classList.add('content');
     section.classList.add('drop-shadow');
     section.classList.add('rounded-corners');
+    section.classList.add('text-shadow');
     section.classList.remove('row');
   });
   document.querySelectorAll('section >img').forEach((img) => {
@@ -68,6 +69,7 @@ document.getElementById('listBtn').addEventListener('click', () => {
     section.classList.remove('content');
     section.classList.remove('drop-shadow');
     section.classList.remove('rounded-corners');
+    section.classList.remove('text-shadow');
     section.classList.add('row');
   });
   document.querySelectorAll('section > img').forEach((img) => {
