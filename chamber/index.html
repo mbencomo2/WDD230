@@ -19,16 +19,14 @@
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
-
-  <!-- Scripts -->
-  <script src="js/index.js" type="module"></script>
 </head>
 
 <body>
   <header>
     <img src="images/logo.webp" alt="Chamber Logo" class="logo">
     <div id="title">
-      <h1 class="text-shadow">Anchorage <span id="lineBreak"><br></span><span id="subtitle">Chamber of Commerce</span></h1>
+      <h1 class="text-shadow">Anchorage <span id="lineBreak"><br></span><span id="subtitle">Chamber of Commerce</span>
+      </h1>
     </div>
     <q id="motto">An Anchor in the Values you Trust</q>
     <p class="rounded-corners" id="date">Current Date Here</p>
@@ -109,7 +107,8 @@
 
       <div class="content text-shadow rounded-corners drop-shadow" id="events">
         <h2>Fish for a Better Future</h2>
-        <img class="spotlightImg" src="https://via.placeholder.com/150" data-src="./images/fishing.png" alt="Fishing Rod">
+        <img class="spotlightImg" src="https://via.placeholder.com/150" data-src="./images/fishing.png"
+          alt="Fishing Rod">
         <p>Join us to help save our oceans from over fishing and receive fishing tips Saturday [1:00PM]... <button
             type="button" onclick="window.location.href='#';">Learn more</button></p>
       </div>
@@ -117,21 +116,26 @@
       <div class="content text-shadow rounded-corners drop-shadow" id="weather">
         <h2>Weather</h2>
         <div class="break-row"></div>
-        <div class="weatherSprite"></div>
-        <p id="temp"><span id="temperature">38</span>&deg;F</p>
-        <div id="weatherDsc">
-          <h3>Partly Cloudy</h3>
+        <div class="day" id="weatherSprite"></div>
+        <p id="temp"><span id="temperature">0</span>&deg;F</p>
+        <div class="break-row"></div>
+        <div id="weatherDetails">
+          <h3 id="weatherDesc"></h3>
           <hr>
           <ul id="windStats">
-            <li>Wind Speed: <span id="windSpeed">15</span> MPH</li>
-            <li>Wind Chill: <span id="windChill">0</span></li>
+            <li>Wind Speed: <span id="windSpeed">0</span> MPH</li>
+            <li>Feels Like: <span id="windChill">0</span></li>
           </ul>
         </div>
+        <div class="break-row"></div>
+        <p id="weatherCredits">*Weather data provided by <a href="https://openweathermap.org/" target="_blank"
+            rel="noopener noreferrer">https://openweathermap.org/</a></p>
       </div>
 
       <div class="content text-shadow rounded-corners drop-shadow" id="spotlight1">
         <h2>Mountaineering</h2>
-        <img class="spotlightImg" src="https://via.placeholder.com/150" data-src="./images/mountain.png" alt="Mountaineering Logo">
+        <img class="spotlightImg" src="https://via.placeholder.com/150" data-src="./images/mountain.png"
+          alt="Mountaineering Logo">
         <p>Built to last, rain or snow.</p>
         <hr>
         <a href="mailto:customer-inquiries@mountaineering.com">&#128231; inquiries@mountain.com</a>
@@ -186,6 +190,9 @@
     <p>&copy;<span id="year">20xx</span> Anchorage Chamber | <b>Matthew Bencomo</b> | WDD 230 Project | <span
         id="lastModified"></span></p>
   </footer>
+
+  <!-- scripts -->
+  <script src="js/index.js" type="module"></script>
 </body>
 
 </html>
