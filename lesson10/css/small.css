@@ -1,0 +1,224 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    --color1: rgb(87, 163, 11);
+    --color2: rgb(65, 118, 16);
+    --color3: rgb(56, 95, 19);
+    --color4: rgb(45, 72, 22);
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: #202b2e;
+    color: white;
+    margin: 0px;
+    
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: var(--color4);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: var(--color2);
+    border-radius: 0 0 5px 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+}
+
+nav ul li a {
+    display: block;
+    background-color: var(--color3);
+    color: #eee;
+    border-left: 1px solid var(--color2);
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li:first-child a {
+    border-left: none;
+}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+
+nav ul li.active a {
+    background-color: var(--color1);
+    color: #fff;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+hr {
+    width: 100%;
+}
+
+#weather {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+    margin: 2rem auto;
+    padding: .5rem;
+}
+
+#weatherDetails {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width: 80%;
+    padding-left: 2%;
+}
+
+#weatherDesc {
+    text-align: center;
+    margin: .5rem 0;
+}
+
+#windStats {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#temp {
+    font-size: 32pt;
+    margin: .8rem 0;
+}
+
+#weatherCredits {
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+.break-row {
+    width: 100%;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: var(--color4);
+    border-radius: 5px 5px 0 0;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*----------- Weather Sprites --------------*/
+.cloudy {
+	background: url('../images/Weather-Icons.png') no-repeat 0 -16px;
+	background-size: 400px 256px;
+	width: 53px;
+	height: 32px;
+}
+
+.day {
+	background: url('../images/Weather-Icons.png') no-repeat -83px -5px;
+	background-size: 400px 256px;
+	width: 53px;
+	height: 53px;
+}
+
+.day-cloudy {
+	background: url('../images/Weather-Icons.png') no-repeat -163px -1px;
+	background-size: 400px 256px;
+	width: 64px;
+	height: 58px;
+}
+
+.night-cloudy {
+	background: url('../images/Weather-Icons.png') no-repeat -253px -6px;
+	background-size: 400px 256px;
+	width: 62px;
+	height: 50px;
+}
+
+.rain {
+	background: url('../images/Weather-Icons.png') no-repeat -83px -108px;
+	background-size: 400px 256px;
+	width: 53px;
+	height: 47px;
+}
+
+.snow {
+	background: url('../images/Weather-Icons.png') no-repeat -169px -105px;
+	background-size: 400px 256px;
+	width: 53px;
+	height: 54px;
+}
+
+.wind {
+	background: url('../images/Weather-Icons.png') no-repeat -258px -114px;
+	background-size: 400px 256px;
+	width: 49px;
+	height: 35px;
+}
+
+.fog {
+	background: url('../images/Weather-Icons.png') no-repeat -83px -203px;
+	background-size: 400px 256px;
+	width: 53px;
+	height: 44px;
+}
+
+.night {
+	background: url('../images/Weather-Icons.png') no-repeat -180px -210px;
+	background-size: 400px 256px;
+	width: 31px;
+	height: 34px;
+}
