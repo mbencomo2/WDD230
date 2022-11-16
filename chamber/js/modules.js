@@ -90,7 +90,7 @@ const pageFunctions = {
 
 // External Functions needed for exports
 function output(result) {
-  console.log(result);
+  // console.log(result);
 
   const temp = document.getElementById('temperature');
   const desc = document.getElementById('weatherDesc');
