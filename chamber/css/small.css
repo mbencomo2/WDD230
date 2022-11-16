@@ -414,24 +414,44 @@ footer ul {
 #weather {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  padding: .5rem;
 }
 
-#temp {
-  font-size: 4rem;
-  font-weight: bolder;
+#weatherDetails {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  width: 80%;
+  padding-left: 2%;
+}
+
+#weatherDetails hr {
+  width: 100%;
+}
+
+#weatherDesc {
+  text-align: center;
   margin: 0;
 }
 
-#weatherDsc {
-  text-align: center;
-  width: 100%;
+#windStats {
+  padding-left: 0;
+  text-align: left;
+  list-style-type: none;
+  margin: 0;
 }
 
-#windStats {
-  width: 100%;
-  text-align: left;
+#temp {
+  font-size: 32pt;
+  margin: 0;
+}
+
+#weatherCredits {
+  font-size: .8rem;
+  margin: 0;
+  margin-top: .5rem;
 }
 
 #buttons {
@@ -461,4 +481,68 @@ input:required {
 
 input:required:valid {
   border-left: 6px solid green;
+}
+
+/*----------- Weather Sprites --------------*/
+.cloudy {
+	background: url('../images/Weather-Icons.png') no-repeat 0 -16px;
+	background-size: 400px 256px;
+	width: 53px;
+	height: 32px;
+}
+
+.day {
+	background: url('../images/Weather-Icons.png') no-repeat -83px -5px;
+	background-size: 400px 256px;
+	width: 53px;
+	height: 53px;
+}
+
+.day-cloudy {
+	background: url('../images/Weather-Icons.png') no-repeat -163px -1px;
+	background-size: 400px 256px;
+	width: 64px;
+	height: 58px;
+}
+
+.night-cloudy {
+	background: url('../images/Weather-Icons.png') no-repeat -253px -6px;
+	background-size: 400px 256px;
+	width: 62px;
+	height: 50px;
+}
+
+.rain {
+	background: url('../images/Weather-Icons.png') no-repeat -83px -108px;
+	background-size: 400px 256px;
+	width: 53px;
+	height: 47px;
+}
+
+.snow {
+	background: url('../images/Weather-Icons.png') no-repeat -169px -105px;
+	background-size: 400px 256px;
+	width: 53px;
+	height: 54px;
+}
+
+.wind {
+	background: url('../images/Weather-Icons.png') no-repeat -258px -114px;
+	background-size: 400px 256px;
+	width: 49px;
+	height: 35px;
+}
+
+.fog {
+	background: url('../images/Weather-Icons.png') no-repeat -83px -203px;
+	background-size: 400px 256px;
+	width: 53px;
+	height: 44px;
+}
+
+.night {
+	background: url('../images/Weather-Icons.png') no-repeat -180px -210px;
+	background-size: 400px 256px;
+	width: 31px;
+	height: 34px;
 }
