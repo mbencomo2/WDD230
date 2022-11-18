@@ -150,7 +150,11 @@ function getSprite(time, weather) {
       spriteName = 'fog';
       break;
     default:
-      spriteName = 'day';
+      if (isDay) {
+        spriteName = 'day';
+      } else {
+        spriteName = 'night';
+      }
       break;
   }
   return spriteName;
