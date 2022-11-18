@@ -131,7 +131,7 @@ function getSprite(time, weather) {
         spriteName = 'night';
       }
       break;
-    case "Cloudy":
+    case "Clouds":
       if (isDay) {
         spriteName = 'day-cloudy';
       } else {
