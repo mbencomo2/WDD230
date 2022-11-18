@@ -103,7 +103,7 @@ function output(result) {
   const description = words.map((word) => { return word[0].toUpperCase() + word.substring(1) }).join(" ");
 
   sprite.classList.remove('day');
-  sprite.classList.add(getSprite(c_time.getTime, result));
+  sprite.classList.add(getSprite(Math.floor(c_time.getTime() / 1000), result));
 
   temp.textContent = result.main.temp.toFixed(0);
   desc.textContent = description;
