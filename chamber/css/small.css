@@ -39,13 +39,17 @@ h6 {
 }
 
 a {
-  padding: .2rem;
+  padding: .8rem;
   color: rgb(0, 174, 197);
   text-decoration: none;
 }
 
 a:hover {
   color: orange;
+}
+
+ul li {
+  margin-top: .8rem;
 }
 
 /*--------------------- Header Styles ---------------------*/
@@ -96,6 +100,10 @@ nav ul {
   margin: 0;
   text-align: center;
   width: 100%;
+}
+
+nav ul li {
+  margin: 0;
 }
 
 nav ul li a {
