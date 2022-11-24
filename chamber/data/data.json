@@ -5,63 +5,72 @@
       "logoURL": "https://chambermaster.blob.core.windows.net/images/customers/1417/members/14288/logos/MEMBER_LOGOSEARCH/Alaska529_DescriptorLogo_HiRes_Color_Transparent.png",
       "streetAddress": "1815 Bragaw St. Ste. 209H, AK 99508",
       "webAddress": "http://www.alaska529plan.com/",
-      "phone": "(907) 474-5671"
+      "phone": "(907) 474-5671",
+      "membership": "Gold"
     },
     {
       "name": "Bean's Cafe",
       "logoURL": "https://chambermaster.blob.core.windows.net/images/customers/1417/representatives/40889/400x400/Bean%252527s+Logo_74450.jpg",
       "streetAddress": "1020 E. 4th Avenue, AK 99501",
       "webAddress": "http://www.beanscafe.org/",
-      "phone": "(907) 433-8601"
+      "phone": "(907) 433-8601",
+      "membership": "Silver"
     },
     {
       "name": "Chugach",
       "logoURL": "https://www.chugachelectric.com/themes/chugach2017/logo.svg",
       "streetAddress": "5601 Electron Drive, AK 99519",
       "webAddress": "http://www.chugachelectric.com/",
-      "phone": "(907) 563-7494"
+      "phone": "(907) 563-7494",
+      "membership": "Bronze"
     },
     {
       "name": "Determine Design LLC",
       "logoURL": "https://img1.wsimg.com/isteam/ip/7ecbf3cb-0463-4de4-a615-d87f021c57d3/logo/fcb5f3f1-7248-4365-820a-35e70aeb3dcd.png/:/rs=w:172,h:80,cg:true,m/cr=w:172,h:80/qt=q:100/ll",
       "streetAddress": "506 E Fireweed Ln Ste A, AK 99503",
       "webAddress": "http://determinedesign.com/",
-      "phone": "(907) 339-9100"
+      "phone": "(907) 339-9100",
+      "membership": "Gold"
     },
     {
       "name": "Enhabit Home Health & Hospice",
       "logoURL": "https://www.ehab.com/wp-content/uploads/2022/04/Enhabit-Purple.svg",
       "streetAddress": "3909Arctic Blvd Ste. 102, AK 99503",
       "webAddress": "https://www.ehab.com/",
-      "phone": "(203) 693-3840"
+      "phone": "(203) 693-3840",
+      "membership": "Gold"
     },
     {
       "name": "FedEx Express",
       "logoURL": "https://www.fedex.com/content/dam/fedex-com/logos/logo.png",
       "streetAddress": "6050 Rockwell Avenue AK 99502",
       "webAddress": "http://www.fedex.com/",
-      "phone": "(907) 249-3423"
+      "phone": "(907) 249-3423",
+      "membership": "Gold"
     },
     {
       "name": "Greatland Adventures",
       "logoURL": "https://www.greatlandadventures.com/wp-content/uploads/2021/08/greatland_adventures_logo.webp",
       "streetAddress": "410 K Street AK 99501",
       "webAddress": "http://www.greatlandadventures.com/",
-      "phone": "(907) 980-8179"
+      "phone": "(907) 980-8179",
+      "membership": "Bronze"
     },
     {
       "name": "Hilltop Ski Area",
       "logoURL": "https://www.hilltopskiarea.org/wp-content/themes/spark/assets/images/logo.png",
       "streetAddress": "7015 Abbott Road, AK 99507",
       "webAddress": "http://www.hilltopskiarea.org/",
-      "phone": "(907) 346-1446"
+      "phone": "(907) 346-1446",
+      "membership": "Bronze"
     },
     {
       "name": "Integrity Environmental LLC",
       "logoURL": "https://chambermaster.blob.core.windows.net/images/customers/1417/members/20846/logos/MEMBER_PAGE_HEADER/Integrity_Environmental_logo_2.jpg",
       "streetAddress": "12110 Business BLVD Ste 6 PMB #434 Eagle River, AK 99577",
       "webAddress": "http://integrity-env.com/",
-      "phone": "(907) 854-7347"
+      "phone": "(907) 854-7347",
+      "membership": "Bronze"
     }
   ]
 }
