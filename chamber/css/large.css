@@ -77,6 +77,14 @@
     width: 30%;
   }
 
+  #contactPage .container {
+    display: grid;
+    grid-template-areas: 
+    'form map';
+    grid-template-columns: 70% 30%;
+    gap: .5rem;
+  }
+
   /*--------------------- Class Selectors ---------------------*/
 
   .container {

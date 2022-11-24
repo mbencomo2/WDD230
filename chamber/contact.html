@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Anchorage Chamber of Commerce: Serving the town of Anchorage since 2020">
-  <title>Anchorage: Discover</title>
+  <title>Anchorage Chamber of Commerce</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.ico">
@@ -19,8 +19,6 @@
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
-
-  <script src="./js/scripts.js" type="module"></script>
 </head>
 
 <body>
@@ -88,13 +86,39 @@
       <li><a href="discover.html">Discover</a></li>
       <li><a href="directory.html">Directory</a></li>
       <li><a href="join.html">Join</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li class="active"><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <main id="join">
-    <div>
-      <h1 class="text-shadow">Join</h1>
-      <p class="content rounded-corners drop-shadow">Thank you for contacting the Anchorage Chamber! We are processing your request and will contact you via email in 1-2 business days.</p>
+  <main id="contactPage">
+    <h1 class="text-shadow">Contact Us</h1>
+    <div class="container">
+      <form action="thankyou.html" method="get" class="rounded-corners" id="from">
+        <fieldset>
+          <legend>Contact Info</legend>
+          <label class="top">First Name <input type="text" name="fname" required title="This is a required field."
+              autofocus></label>
+          <label class="top">Last Name <input type="text" name="lname" required
+              title="This is a required field."></label>
+          <label class="top">Email <input type="email" name="email" placeholder="someone@aplace.com" required
+              title="This is a required field."></label>
+          <label class="top">Phone <input type="tel" name="pnone" placeholder="1235551234" required
+              title="This is a required field."></label>
+          <label class="top">Business Name/Title <input type="text" name="business" required
+              title="This is a required field."></label>
+          <input type="datetime-local" name="dateTime" id="dateField" hidden>
+        </fieldset>
+        <fieldset id="desc">
+          <legend>Details</legend>
+          <label class="top">Please tell us your reason for contacting us in a paragraph or less.<textarea
+              name="contents" id="content" rows="7"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Contact Us" class="submitBtn">
+      </form>
+      <section id="mapEmbed" class="content drop-shadow text-shadow rounded-corners">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1921.1076913048546!2d-149.9044435835759!3d61.21641808235849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c8bd81111de801%3A0x93931defc9d03905!2sAnchorage%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1669275697052!5m2!1sen!2sus"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-corners"></iframe>
+      </section>
     </div>
   </main>
   <footer>
@@ -106,18 +130,21 @@
     </ul>
     <ul id="contact">
       <li>
-        <a href="mailto:inquiries@anchors.com">📧 inquiries@anchorchamber.com</a>
+        <a href="mailto:inquiries@anchors.com">&#128231; inquiries@anchorchamber.com</a>
       </li>
       <li>
-        <a href="tel:456-789-1237">📱 (+1)456-789-1237</a>
+        <a href="tel:456-789-1237">&#128222; (+1)456-789-1237</a>
       </li>
       <li>
-        <a href="https://g.page/AnchorageChamber?share">📍 Link to map</a>
+        <a href="https://g.page/AnchorageChamber?share">&#128205; Link to map</a>
       </li>
     </ul>
-    <p>© <span id="year">20xx</span> Anchorage Chamber | <b>Matthew Bencomo</b> | WDD 230 Project | <span
+    <p>&copy;<span id="year">20xx</span> Anchorage Chamber | <b>Matthew Bencomo</b> | WDD 230 Project | <span
         id="lastModified"></span></p>
   </footer>
+
+  <!-- scripts -->
+  <script src="js/index.js" type="module"></script>
 </body>
 
 </html>

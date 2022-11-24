@@ -20,6 +20,7 @@
     grid-template-columns: 100px 1fr 1fr;
     grid-template-areas: 
     'logo address contact';
+    gap: .5rem;
   }
 
   /*--------------------- ID Selectors ---------------------*/
