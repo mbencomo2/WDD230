@@ -26,7 +26,7 @@ function output(result) {
   const description = words.map((word) => {return word[0].toUpperCase() + word.substring(1)}).join(" ");
 
   sprite.classList.remove('day');
-  sprite.classList.add(getSprite(c_time.getTime, result));
+  sprite.classList.add(getSprite(c_time.getTime() / 1000, result));
 
   temp.textContent = result.main.temp.toFixed(0);
   desc.textContent = description;
@@ -49,7 +49,7 @@ function getSprite(time, weather) {
         spriteName = 'night';
       }
       break;
-    case "Cloudy":
+    case "Clouds":
       if (isDay) {
         spriteName = 'day-cloudy';
       } else {
@@ -68,7 +68,11 @@ function getSprite(time, weather) {
       spriteName = 'fog';
       break;  
     default:
-      spriteName = 'day';
+      if (isDay) {
+        spriteName = 'day';
+      } else {
+        spriteName = 'night';
+      }
       break;
   }
   return spriteName;
