@@ -408,6 +408,10 @@ footer ul {
   margin-top: .5rem;
 }
 
+#activities .content img {
+  width: 80%;
+}
+
 #hero {
   background-image: url('../images/downtown-anchorage.jpeg');
   background-size: cover;
