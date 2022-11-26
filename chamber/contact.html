@@ -92,32 +92,43 @@
   <main id="contactPage">
     <h1 class="text-shadow">Contact Us</h1>
     <div class="container">
-      <form action="thankyou.html" method="get" class="rounded-corners" id="from">
-        <fieldset>
-          <legend>Contact Info</legend>
-          <label class="top">First Name <input type="text" name="fname" required title="This is a required field."
-              autofocus></label>
-          <label class="top">Last Name <input type="text" name="lname" required
-              title="This is a required field."></label>
-          <label class="top">Email <input type="email" name="email" placeholder="someone@aplace.com" required
-              title="This is a required field."></label>
-          <label class="top">Phone <input type="tel" name="pnone" placeholder="1235551234" required
-              title="This is a required field."></label>
-          <label class="top">Business Name/Title <input type="text" name="business" required
-              title="This is a required field."></label>
-          <input type="datetime-local" name="dateTime" id="dateField" hidden>
-        </fieldset>
-        <fieldset id="desc">
-          <legend>Details</legend>
-          <label class="top">Please tell us your reason for contacting us in a paragraph or less.<textarea
-              name="contents" id="content" rows="7"></textarea></label>
-        </fieldset>
-        <input type="submit" value="Contact Us" class="submitBtn">
-      </form>
+      <div>
+        <form action="thankyou.html" method="get" class="rounded-corners" id="from">
+          <fieldset>
+            <legend>Contact Info</legend>
+            <label class="top">First Name <input type="text" name="fname" required title="This is a required field."
+                autofocus></label>
+            <label class="top">Last Name <input type="text" name="lname" required
+                title="This is a required field."></label>
+            <label class="top">Email <input type="email" name="email" placeholder="someone@aplace.com" required
+                title="This is a required field."></label>
+            <label class="top">Phone <input type="tel" name="pnone" placeholder="1235551234" required
+                title="This is a required field."></label>
+            <label class="top">Business Name/Title <input type="text" name="business" required
+                title="This is a required field."></label>
+            <input type="datetime-local" name="dateTime" id="dateField" hidden>
+          </fieldset>
+          <fieldset id="desc">
+            <legend>Details</legend>
+            <label class="top">Please tell us your reason for contacting us in a paragraph or less.<textarea
+                name="contents" id="content" rows="7"></textarea></label>
+          </fieldset>
+          <input type="submit" value="Contact Us" class="submitBtn">
+        </form>
+        <hr>
+        <address class="content drop-shadow text-shadow rounded-corners">
+          <h4>Anchorage Chamber of Commerce</h4>
+          1016 West Sixth Avenue, Suite 303 <br>
+          Anchorage , AK 99501 <br>
+          (907) 272-2401 or (907) 272-2401 Fax: (907) 272-4117 <br><br>
+          <a href="mailto:info@anchoragechamber.org">info@anchoragechamber.org</a>
+        </address>
+      </div>
       <section id="mapEmbed" class="content drop-shadow text-shadow rounded-corners">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1921.1076913048546!2d-149.9044435835759!3d61.21641808235849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c8bd81111de801%3A0x93931defc9d03905!2sAnchorage%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1669275697052!5m2!1sen!2sus"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-corners"></iframe>
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          class="rounded-corners"></iframe>
       </section>
     </div>
   </main>
@@ -142,9 +153,6 @@
     <p>&copy;<span id="year">20xx</span> Anchorage Chamber | <b>Matthew Bencomo</b> | WDD 230 Project | <span
         id="lastModified"></span></p>
   </footer>
-
-  <!-- scripts -->
-  <script src="js/index.js" type="module"></script>
 </body>
 
 </html>

@@ -232,6 +232,14 @@ footer ul {
   padding: .5rem;
   background-color: var(--color-3);
   color: var(--color-text);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content hr {
+  width: 80%;
 }
 
 .spotlightImg {

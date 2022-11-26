@@ -45,34 +45,6 @@
     border: 3px solid #292929;
   }
 
-  #hero {
-    grid-area: hero;
-  }
-
-  #events {
-    grid-area: events;
-  }
-
-  #spotlight1 {
-    grid-area: spotlight1;
-  }
-
-  #spotlight2 {
-    grid-area: spotlight2;
-  }
-
-  #join {
-    grid-area: join;
-  }
-
-  #weather {
-    grid-area: weather;
-  }
-
-  #news {
-    grid-area: news;
-  }
-
   #buttons {
     width: 30%;
   }
