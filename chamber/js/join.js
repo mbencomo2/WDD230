@@ -7,7 +7,7 @@ pageFunctions.displayBanner();
 pageFunctions.hamburgerMenu();
 //Display the date in the header
 pageFunctions.displayDate();
-//Last Visited
-pageFunctions.lastVisited();
+//Display last document modified date
+pageFunctions.lastModified();
 //autofill date field
 pageFunctions.autoFillDateTime();

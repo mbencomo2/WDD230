@@ -22,6 +22,9 @@ const pageFunctions = {
       document.getElementById('burgerBtn').classList.toggle('open');
     })
   },
+  lastModified() {
+    document.getElementById('lastModified').textContent = document.lastModified
+  },
   deferImages() {
     const imagesToLoad = document.querySelectorAll("img[data-src]");
 

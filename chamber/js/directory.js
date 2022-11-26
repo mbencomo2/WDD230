@@ -6,6 +6,8 @@ pageFunctions.displayBanner();
 pageFunctions.hamburgerMenu();
 //Display the date in the header
 pageFunctions.displayDate();
+//Display last document modified date
+pageFunctions.lastModified();
 
 const requestURL = './data/data.json';
 const cards = document.querySelector('#directory');
